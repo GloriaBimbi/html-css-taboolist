@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="author" content="Gloria Bimbi">
-    <meta http-equiv="X-UA_Compatible" content="IE-edge">
-    <meta name="description" content="Taboolist">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
-    <title>Taboolist</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-    <header class="intestazione">
-        <img src="./img/Logo.png" alt="Logo">
-        <h1>Taboolist</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="author" content="Gloria Bimbi" />
+    <meta http-equiv="X-UA_Compatible" content="IE-edge" />
+    <meta name="description" content="Toboolist" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <title>Toboolist</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/Logo.png" alt="Logo" class="header-logo" />
+      <h1 class="header-title">Toboolist</h1>
     </header>
 
-   <div class="containter">
+    <div class="containter">
+      <nav class="navigation">
+        <button class="bttn" id="blue-button">Add Task</button>
+        <button class="bttn" id="white-button">Add Section</button>
+      </nav>
 
-    <nav class="navigation">
-        <button id="blue-button">Add Task</button>
-        <button id="white-button">Add Section</button>
-    </nav>
+      <main class="container-body">
+       
+        <section class="card-section">
+        <h2>&#9662 New Task</h2>
+        <ul class="card-list">
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Quarterly Newsletter</span>
+            <span class="badge badge-editorial">Editorial</span>
+          </li>
+        </ul>
+       </section>
 
-    <main>
-        <h2>▼New Task</h2>
-        <h3><span class="green"></span> Newsletter</h3>
-    </main>
+       <section class="card-section">
+        <h2>&#9662 Today</h2>
+        <ul class="card-list">
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Recruiting blog post</span>
+            <span class="badge badge-editorial">Editorial</span>
+          </li>
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Mobile app luaunch</span>
+            <span class="badge badge-q1goals">Editorial</span>
+          </li>
+          <li>
+            <span class="item item-undone">&cross;</span>
+            <span class="list-item-text">Interview John H.</span>
+            <span class="badge badge-recruiting">Editorial</span>
+          </li>
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Summit update to mobile storefonts</span>
+            <span class="badge badge-mobile">Editorial</span>
+          </li>
+        </ul>
+       </section>
+       <section class="card-section">
+        <h2>&#9662 Upcoming</h2>
+        <ul class="card-list">
+            <li class="list-item">
+                <span class="item item-undone">&cross;</span>
+                <span class="list-item-text">Schedule meetingwith Alex</span>
+              </li>
+            <li class="list-item">
+                <span class="item item-done">&check;</span>
+                <span class="list-item-text">Homepage refresh</span>
+                <span class="badge badge-website">Editorial</span>   
+          </li>
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Onboard new Sales team members</span>
+            <span class="badge badge-sales">Editorial</span>
+          </li>
+          <li class="list-item">
+            <span class="item item-done">&check;</span>
+            <span class="list-item-text">Review editorial calendar</span>
+            <span class="badge badge-editorial">Editorial</span>
+          </li>
+        </ul>
+       </section>
 
-   </div>
-
-</body>
+      </main>
+    </div>
+  </body>
 </html>

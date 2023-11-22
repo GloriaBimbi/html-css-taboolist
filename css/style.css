@@ -1,73 +1,140 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Merriweather', serif;
-    background-color: blue;
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Merriweather", serif;
+  background-color: lightgrey;
 }
 
 /*HEADER*/
-.intestazione{
-    line-height: 100px;
-    height: 75px;
-    background-color: white;
+.header {
+  line-height: 100px;
+  height: 100px;
+  background-color: white;
+  padding: 0 15px;
+  margin-bottom: 50px;
 }
 
-.intestazione>img .intestazione>h1{
-    vertical-align: 100px;
+.header-logo,
+.header-title {
+  display: inline;
+  vertical-align: middle;
 }
 
-h1 {
-    display: inline-block;
+.header-title {
+  margin-left: 15px;
 }
-
 
 /*CONTAINER*/
 
 .containter {
-    background-color: white;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: auto;
-    border-radius: 5%; 
-    padding: 10px 40px; 
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  /*padding: 10px 40px;*/
 }
 
 /*NAV*/
-.navigation{
-    border-bottom-color: black;
-    border: 10px;
-
+.navigation {
+  border-bottom: 2px solid lightgrey;
 }
 
-button{
-    border-radius: 2px;
-    padding: 5px;
-    border: 1px;
+.navigation,
+.container-body {
+  padding: 20px;
 }
 
-#blue-button{
-    background-color: rgb(0, 179, 255);
-    color: white;
-    border-color: rgb(0, 179, 255);
+.bttn {
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px;
+  cursor: pointer;
 }
 
-#white-button{
-    color: grey;
-    border-color: grey;
+#blue-button {
+  background-color: rgb(0, 179, 255);
+  color: white;
+  border-color: rgb(0, 179, 255);
 }
 
-
+#white-button {
+  color: grey;
+  border-color: grey;
+}
 
 /*MAIN*/
 
-h2{
-    margin-top: 20px;
+h2 {
+  margin-top: 20px;
 }
 
+.card-section {
+  margin: 30px 0;
+}
+
+.card-list {
+  list-style: none;
+}
+
+/*list*/
+.item {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  text-align: center;
+}
+
+.item.item-done {
+  color: green;
+}
+
+.item.item-undone {
+  color: red;
+}
+
+.list-item {
+  margin: 10px 0;
+  line-height: 28px;
+}
+
+.badge {
+  font-size: 0.8rem;
+  border-radius: 15px;
+  padding: 4px 8px;
+  color: white;
+  background-color: #333;
+}
+
+.badge.badge-editorial {
+  background-color: rgb(93, 93, 238);
+}
+
+.badge.badge-q1goals {
+  background-color: rgb(162, 4, 162);
+}
+
+.badge.badge-recruiting {
+  background-color: rgb(57, 137, 57);
+}
+
+.badge.badge-mobile {
+  background-color: rgb(255, 181, 43);
+}
+
+.badge.badge-website {
+  background-color: rgb(243, 118, 139);
+}
+
+.badge.badge-sales {
+  background-color: yellowgreen;
+}
